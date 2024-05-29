@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #D3D3D3;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #04AA6D;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: orangered;
+        }
+
+        .active {
+            background-color: orangered;
+        }
+
+        .column {
+            flex: 33.33%;
+            height: 250px;
+            padding: 10px;
+            margin: 5px;
+            background-color: #F0F0F0;
+            text-align: left;
+        }
+
+        .container {
+            display: flex;
+            background-color: #F0F0F0;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h2>This is my brading</h2>
+        <p>Say something about website</p>
+        <p style="color: black;">
+            <i>
+                (Họ và tên:)
+            </i>
+        </p>
+        <p style="color: black;">
+            <i>
+                (Lớp:)
+            </i>
+        </p>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="column">
+            <h2> Column </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maxime vero exercitationem pariatur
+                itaque. Sunt, voluptate soluta mollitia animi, accusamus dignissimos quo provident atque debitis neque
+                explicabo sit rem! Quibusdam?</p>
+        </div>
+        <div class="column">
+            <h2> Column </h2>
+            <img src="banh-cuon-thanh-tri.jpeg" alt="" width="150px" height="150px">
+        </div>
+        <div class="column">
+            <h2> Column </h2>
+            <audio controls autoplay>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>HyHy@2018</p>
+    </footer>
+
+</body>
+
+</html>
